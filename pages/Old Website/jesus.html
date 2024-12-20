@@ -12,6 +12,30 @@
 
   </head>
 
+  <script>
+    document.addEventListener('keydown', function(event) {
+      if (event.key === '1') {
+        window.location.href = '../../index.html';
+      }
+    });
+  </script>
+
+<script>
+  let escapePressed = false;
+  let animationFrameId = null;
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' || event.keyCode === 27) {
+      if (!escapePressed) {
+        cancelAnimationFrame(animationFrameId);
+        animationFrameId = requestAnimationFrame(function() {
+          window.location.href = '../../index.html';
+          escapePressed = true;
+        });
+      }
+    }
+  });
+</script>
+
   <body>
 
     <p style="color:black; background-color: yellow; text-align: center;"><b style="color: black;">ARCHIVED: December 19th (Will not be updated unless specifically requested but would like to keep new one maintained)</b></p>
