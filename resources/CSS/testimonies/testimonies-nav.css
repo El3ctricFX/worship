@@ -1,0 +1,76 @@
+
+/* Main Page Properties */
+
+/* Main properties for whole top nav */
+
+
+
+
+/* CSS Properties for the "worship" text */ 
+
+.maintext {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  color: rgb(216, 216, 76);
+}
+
+/* Give sthe structure of the navagation bar like background and etc. */
+
+.navagation  {
+    height: 100%;
+    display: table;
+    padding: 0px 20px;
+    width: 100%;
+    table-layout: fixed; 
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+    height: 50px;
+    width: 40%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Actually Makes it a navagation cause without it its a bullet list like the li tag normally is */
+
+.navagation li{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navagation a {
+    color: rgb(0, 174, 255);
+    text-decoration: none;
+}
+
+
+/* CSS Properties for Bible Verse Page */
+
+.right-topnav {
+    background-color: rgb(226, 226, 226);
+    height: 50px;
+    width: fit-content;
+    display: block;
+    border-radius: 20px;
+    position: fixed;
+    margin-right: 5px;
+    top: 0;
+    right: 0;
+    
+}
+
+.backbutton {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  color: rgb(36, 36, 33);
+  font-size: 18px;
+}
+
+.backbutton a {
+    text-decoration: none;
+    color: rgb(43, 42, 42);
+}
+

@@ -1,0 +1,20 @@
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: Center; 
+    font-size: 18px;
+    margin-bottom: 5px;
+    background-color: rgb(226, 226, 226);
+    height: 30px;
+    width: 100%;
+    padding: 0px 20px;
+    border-radius: 20px;
+    
+    
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    vertical-align: middle;
+}

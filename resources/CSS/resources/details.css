@@ -1,0 +1,38 @@
+.text {
+   
+    margin-left: 130px; /* adjust this value to create space between nav and content */
+    margin-top: 10px;
+}
+
+.list {
+    margin-left: 130px; /* adjust this value to create space between nav and content */
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.sb {
+  background-color: gray;
+  color: white;
+  border-radius: 20px;
+  padding-left: 10px;
+  width: fit-content; 
+  padding-right: 10px;
+  margin-left: 5px;
+}
+
+.sb a {
+  text-decoration: none;
+  color: white;
+}
+
+.yt {
+    background-color: red;
+}
+
+.tt {
+  background-color: rgb(73, 73, 73);
+}
+
+.link {
+  background-color: rgb(74, 157, 74);
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jesus Is Lord</title>
+    <link rel="stylesheet" href="../resources/main.css">
+    <link rel="stylesheet" href="../resources/CSS/FAQ/faq-nav.css">
+    <link rel="stylesheet" href="../resources/CSS/Main/homepage-detail.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="resources/image/icon.png" type="image/x-icon">
+  </head>
+
+  <script>
+    document.addEventListener('keydown', function(event) {
+      if (event.key === '1') {
+        window.location.href = '../index.html';
+      }
+    });
+  </script>
+
+<script>
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'f') {
+      window.location.href = '../index.html';
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener('keydown', function(event) {
+    if (event.key === '?') {
+      window.location.href = '../index.html';
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener('keydown', function(event) {
+    if (event.key === '?') {
+      window.location.href = '../index.html';
+    }
+  });
+</script>
+
+<script>
+  let escapePressed = false;
+  let animationFrameId = null;
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' || event.keyCode === 27) {
+      if (!escapePressed) {
+        cancelAnimationFrame(animationFrameId);
+        animationFrameId = requestAnimationFrame(function() {
+          window.location.href = '../index.html';
+          escapePressed = true;
+        });
+      }
+    }
+  });
+</script>
+
+  <body>
+
+    <div align="center">
+      <ul class="navagation">
+        <li><a href="../index.html"><i class="fa-regular fa-circle-question"></i> FAQ </a></li>
+    
+      </ul>
+    </div>
+    
+    <img class="fullphoto" src="https://cdn.pixabay.com/photo/2024/05/31/07/53/ai-generated-8800020_640.jpg" alt="picture of ???">
+
+
+
+ <!------ FAQ ---------->
+
+   <details>
+    <summary>
+      FAQ
+    </summary>
+    <ul>
+      <details>
+        <summary>How can i contribute towards the website? or just request a addon to the website?</summary>
+        <ul>
+          <p>
+            <br>
+            You can do this through the website's <a href="https://github.com/El3ctricFX/worship">GitHub Reposority</a>, if you know how to code yourself you can do a pull request but if you just want a feature added you can submit through GitHub's <a href="https://github.com/El3ctricFX/worship/issues">Issue</a> Tab as a Feature Request & Enhancement!
+          </p>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Some Cool shortcuts on the website</summary>
+        <ul>
+          <p>
+            <br>
+            So while making this i just thought the navigation would be slower considering someone like me uses a window manager, so i had intergraded stuff to where your able to do the following <br>
+            <ul>
+              <li>Your able to click 1, 2, & 3 to navigate throughout the top bar</li>
+              <ul>
+                <li>1 for Bible verses</li>
+                <li>2 for Testimonies</li>
+                <li>3 for Resources</li>
+              </ul>
+              Same Works for when your actually in the tabs, you can click 1 to go back to home screen
+              <li>and just to go back your also able to click on the header text as well, so like say you click on bible verse and click bible verse again it'll go back to home screen</li>
+              <li>Able to hit "?" to get here</li>
+              <li>With the pages with "-" and "+" your also able to just press those on your keyboard to go from smaller to bigger pages.</li>
+              <li>On bible verses to go from biggest to literally just plain html you can press "h"</li>
+            </ul>
+          </p>
+        </ul>
+      </details>
+    </ul>
+   </details>
+
+
+
+
+  </body>
+
+</html>
+
+
+

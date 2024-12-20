@@ -1,4 +1,6 @@
-## Work in progress
-once completed this is gonna be a dedicated website for our Father 
+# About
 
-Ecclesiastes 3:1 🙏
+With this website my goal is to help people get closer with our Abba 🙏
+
+Luke 16:9 <br>
+Ecclesiastes 3:1

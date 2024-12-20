@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bible Verses</title>
+    <link rel="stylesheet" href="../../resources/main.css">
+    <link rel="stylesheet" href="../../resources/CSS/Bible Verse/bibleverse-nav.css">
+    <link rel="stylesheet" href="../../resources/CSS/Bible Verse/smallercss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../../resources/image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../resources/CSS/Bible Verse/button.css">
+
+  </head>
+
+  <!---Scripts for Navigaton---->
+
+  <script>
+    document.addEventListener('keydown', function(event) {
+      if (event.key === '1') {
+        window.location.href = '../../index.html';
+      }
+    });
+  </script>
+  
+  <script>
+    let escapePressed = false;
+    let animationFrameId = null;
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' || event.keyCode === 27) {
+        if (!escapePressed) {
+          cancelAnimationFrame(animationFrameId);
+          animationFrameId = requestAnimationFrame(function() {
+            window.location.href = '../../index.html';
+            escapePressed = true;
+          });
+        }
+      }
+    });
+  </script>
+
+<script>
+    document.addEventListener('keydown', function(event) {
+      if (event.key === '=') {
+        window.location.href = '../bibleverses.html';
+      }
+    });
+  </script>
+
+<script>
+  document.addEventListener('keydown', function(event) {
+    if (event.key === '-') {
+      window.location.href = 'literallyjusthtml.html';
+    }
+  });
+</script>
+
+  <!------------------------------>
+
+  <body>
+  
+
+
+  
+    <div class="right-topnav navagation" align="right">
+      <h1 class="backbutton"><a href="../../index.html">Back</a></h1>
+   </div>
+
+    </div>
+
+    <div align="center">
+      <ul class="navagation">
+        <li class="headertext"><a href="../../index.html"><i class="fa-solid fa-book-bible"></i> Bible Verses</a></li>
+      </ul>
+    </div>
+
+    <img class="fullphoto" src="https://cdn.pixabay.com/photo/2016/11/29/07/22/bible-1868070_640.jpg" alt="Bible Photo from Pixabay">
+    
+    <!---- Header text ------>
+
+    <p class="introtext">Bible Verses</p>
+    
+    <p class="mainverse">
+      Inspirational Verse to share our knowledge. <br>
+      Luke 16:9</p> 
+
+    <br>
+
+    <p style="margin-left: 1%;">as a heads up if you see (Context) your able to hover it over and see the background story to it for ex: <font title="this little buble will show up so while hovering over context you'll see why i added certain verses" style="color: rgb(0, 132, 255);">(Test)</font></p>
+   
+    <br>
+    <p style="margin-left: 1%;">Your also able to hover the verses and have daily verses thanks to <a href="https://www.biblegateway.com/usage/">Bible Gateway's Api!</a></p>
+    <br>
+    <hr>
+<br>
+    <p style="margin-left: 10px;">Daily Verse</p>
+
+    <script type="text/javascript">
+      document.write("<iframe src=\"https://www.kingjamesbibleonline.org/inspiring-images-widget.php\" style=\"width: 344px; height: 344px; border: 0px solid #ffffff;\"></iframe>");
+      </script>
+<script type="text/javascript">
+  document.write("<iframe src=\"https://www.kingjamesbibleonline.org/popular-bible-verses-widget.php\" style=\"width: 200px; height: 240px; border: 0px solid #ffffff;\"></iframe>");
+  </script>
+
+    <hr>
+
+<!------------ Main Content ------------->
+
+<br>
+
+<p class="versesbox">
+
+  <b>All Verses</b>
+ 
+</p>
+
+<button class="button">
+  <a href="literallyjusthtml.html">-</a>
+</button>
+
+<button class="button">
+  <a href="../bibleverses.html">+</a>
+</button>
+
+<!---------------- Who Ever goes to edit this please keep it in Biblical Order -------------------->
+
+<ul class="big-textformat verses">
+
+  <!--- Old Testament --->
+  <li>Psalms 4:8</li>
+  <li>Psalms 23:1-6 <font size="3">(Whole Chapter)</font></li>
+  <li>Psalms 25:4</li>
+  <li>Psalms 91:11</li>
+  <li>Psalms 118:13-14</li>
+  <li>Psalms 139:23-24</li>
+
+  <li>Proverbs 3:5-6</li>
+  <li>Proverbs 9:10</li>
+  <li>Proverbs 18:21 </li>
+  <li>Proverbs 24:16</li>
+  <li>Proverbs 27:17</li>
+
+  <li>Ecclesiastes 3:1</li>
+
+  <li>Isaiah 41:10</li>
+  <li>Isaiah 41:13</li>
+  <li>Isaiah 44:22</li>
+
+  <li>Jeremiah 29:11</li>
+
+  <!--- New Testament --->
+
+  <li>Matthew 6:9-13</li>
+  <li>Matthew 6:25-34</li>
+  <li>Matthew 6:33-34</li>
+  <li>Matthew 7:7</li>
+  <li>Matthew 11:28</li>
+  <li>Matthew 16:24</li>
+
+  <li>Luke 6:27-29</li>
+  <li>Luke 6:35-36</li>
+  <li>Luke 16:9 <font size="3" title="found this verse while reading my daily Luke reading for this month of December, and the same day i got my Physical bible i find this verse and while working on this website i think its crazy.">(Context)</font></li>
+  <li>Luke 23:34</li>
+
+  <li>John 3:16</li>
+  <li>John 13:34</li>
+  <li>John 14:6-7</li>
+  <li>John 15:18-19</li>
+ 
+  <li>Romans 1:16</li>
+  <li>Romans 5:8-9</li>
+  <li>Romans 6:23</li>
+  <li>Romans 8:11</li>
+  <li>Romans 8:18</li>
+  <li>Romans 10:9</li>
+  <li>Romans 10:17</li>
+  <li>Romans 12:2</li>
+
+  <li>1 Corinthians 7:17</li>
+  <li>1 Corinthians 10:13</li>
+  <li>1 Corinthians 13:4-8</li>
+
+  <li>2 Corinthians 5:17</li>
+
+  <li>Galatians 2:20</li>
+  <li>Galatians 6:2</li>
+
+  <li>Ephesians 4:29</li>
+  <li>Ephesians 4:32</li>
+
+  <li>Philippians 4:6-7</li>
+  <li>Philippians 4:13</li>
+
+  <li>2 Timothy 2:25</li>
+
+  <li>James 1:2-4</li>
+  <li>James 1:6</li>
+  <li>James 4:4</li>
+  <li>James 5:16</li>
+
+  <li>1 Peter 5:6-7</li>
+  <li>1 Peter 5:8-9</li>
+  <li>1 Peter 5:9</li>
+ 
+  <li>2 Peter 3:18</li>
+
+  <li>1 John 1:9</li>
+  <li>1 John 2:15-17</li>
+
+</ul>
+
+
+<br><br><br>
+
+<!----- Bible Gateway's "Bible Gateway Ref Tag Tool" ------>
+
+<script src="https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js" type="text/javascript"></script>
+<script type="text/javascript">
+BGLinks.version = "NLT";
+BGLinks.linkVerses();
+</script>
+
+<!-----Can be found here for more resources: https://www.biblegateway.com/usage/ ------>
+
+
+
+  </body>
+
+</html>
+
+
+

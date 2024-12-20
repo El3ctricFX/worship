@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bible Verses</title>
+    <link rel="stylesheet" href="../resources/main.css">
+    <link rel="stylesheet" href="../resources/CSS/Bible Verse/bibleverse.css">
+    <link rel="stylesheet" href="../resources/CSS/testimonies/testimonies-nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../resources/image/icon.png" type="image/x-icon">
+  </head>
+
+  <script>
+    document.addEventListener('keydown', function(event) {
+      if (event.key === '1') {
+        window.location.href = '../index.html';
+      }
+    });
+  </script>
+
+<script>
+  let escapePressed = false;
+  let animationFrameId = null;
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' || event.keyCode === 27) {
+      if (!escapePressed) {
+        cancelAnimationFrame(animationFrameId);
+        animationFrameId = requestAnimationFrame(function() {
+          window.location.href = '../index.html';
+          escapePressed = true;
+        });
+      }
+    }
+  });
+</script>
+
+  <body>
+  
+ 
+
+  
+    <div class="right-topnav navagation" align="right">
+      <h1 class="backbutton"><a href="../index.html">Back</a></h1>
+   </div>
+
+    </div>
+
+    <div align="center">
+      <ul class="navagation">
+        <li class="headertext"><a href="../index.html"><i class="fa-solid fa-scroll"></i> Testimonies</a></li>
+      </ul>
+    </div>
+
+    <img class="fullphoto" src="https://cdn.pixabay.com/photo/2015/07/27/20/16/book-863418_640.jpg" alt="Picture of bible with tree and stuff in background">
+    
+    <p class="main-textformat" style="margin-left: 1%; margin-top: 1%;">Work in Progress</p>
+
+  
+  </body>
+
+</html>
+
+
+

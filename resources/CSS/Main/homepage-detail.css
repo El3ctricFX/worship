@@ -1,0 +1,69 @@
+/* This is for Header Photos */
+.fullphoto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 30%;
+   
+}
+
+
+.textformat {
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 18px;
+}
+
+
+
+/* FAQ Properties */
+
+details {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  details::marker {
+    content: "\25B2"; /* arrow icon */
+    font-size: 16px;
+    color: #667;
+  }
+  
+  
+  
+  details > div {
+    display: block;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  summary:hover {
+    background-color: #ffee00;
+  }
+
+  .bottomtext {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center; 
+    color: rgb(49, 49, 49);
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .bottomlink {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left; 
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
