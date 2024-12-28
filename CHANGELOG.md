@@ -36,8 +36,9 @@
 
 > - [1 Timothy 4:12](https://www.biblegateway.com/passage/?search=1%20Timothy%204%3A12&version=NLT)
 
-### Commits
+### Commit ID
 
+[9091508](https://github.com/El3ctricFX/worship/commit/90915084954f3cc2d254dc4075b03603c50d50b7)
 
 ## Credit
 
@@ -47,7 +48,7 @@ Made by [@El3ctricFX](https://github.com/El3ctricFX)
 
 > - released the refurbished Website to the public
 
-### Commits
+### Commit IDs
 
 > - [c178c28](https://github.com/El3ctricFX/worship/commit/c178c28762a277238134144e1f445afb567edfe0)
 > - [1e5851f](https://github.com/El3ctricFX/worship/commit/1e5851ff7ae8a2481b3ef850091313951d51c36d)
