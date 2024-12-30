@@ -7,7 +7,7 @@
 
 ### Commit
 
-[replace](replace)
+[d4e6c66](https://github.com/El3ctricFX/worship/commit/d4e6c66b0cd790c77508790fdbe31c8de6cb517e)
 
 ## Credit
 
