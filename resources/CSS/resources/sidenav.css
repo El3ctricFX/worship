@@ -40,3 +40,47 @@
     color: white;
    
   }
+
+  @media (max-width: 500px) {
+    .sidebar {
+      width: fit-content;
+      background-color: gray;
+      padding: 5px;
+      text-align: left;
+      height: 100%;
+      position: absolute;
+    }
+
+    .sidebar button {
+      font-size: 10px;
+    }
+
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-list button {
+      border-radius: 20px;
+      display: table;
+      margin-top: 5px;
+    }
+
+    
+  }
+
+
+  @media (max-width: 380px) {
+    .sidebar {
+      width: fit-content;
+      background-color: gray;
+      padding: 5px;
+      text-align: left;
+      height: 512px;
+      position: absolute;
+
+
+    }
+
+  }

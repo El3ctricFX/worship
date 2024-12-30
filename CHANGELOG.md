@@ -1,3 +1,19 @@
+# December 30
+
+### Additions
+
+> - Corrected CSS Properties to be better fit for mobile devices
+> - Added mobile friendly file for bible verses, with button for navagation
+
+### Commit
+
+[replace](replace)
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+
 # December 27
 
 ### Verses added

@@ -67,3 +67,116 @@ details {
     font-size: 13px;
     margin-bottom: 5px;
   }
+
+  @media (max-width: 680px) {
+    .textformat {
+      margin-top: 2%;
+      margin-left: 2%;
+      font-size: 14px;
+    }
+
+    .bullets {
+      font-size: 14px;
+    }
+
+  }
+
+  @media (max-width: 400px) {
+    .textformat {
+      margin-top: 2%;
+      margin-left: 2%;
+      font-size: 11px;
+    }
+
+    .bullets {
+      font-size: 11px;
+    }
+
+    .bottomtext2 {
+      font-size: 11px;
+    }
+
+    .fullphoto {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      opacity: 30%;
+     
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .textformat {
+      margin-top: 2%;
+      margin-left: 2%;
+      font-size: 16px;
+    }
+
+    .bullets {
+      font-size: 16px;
+    }
+
+    .bottomtext2 {
+      font-size: 16px;
+      margin-left: 1%;
+    }
+
+    .fullphoto {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      opacity: 30%;
+     
+    }
+  }
+
+  @media (min-width: 1150px) {
+    .textformat {
+      margin-top: 2%;
+      margin-left: 2%;
+      font-size: 18px;
+    }
+
+    .bullets {
+      font-size: 18px;
+    }
+
+    .bottomtext2 {
+      font-size: 18px;
+      margin-left: 1%;
+    }
+
+    .fullphoto {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      opacity: 30%;
+     
+    }
+  }
+
+
+  @media (max-height: 550px) {
+    .textformat {
+      margin-top: 2%;
+      margin-left: 2%;
+      font-size: 10px;
+    }
+
+    .bullets {
+      font-size: 10px;
+    }
+
+    .bottomtext2 {
+      font-size: 10px;
+      margin-left: 1%;
+    }
+
+    .fullphoto {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      opacity: 30%;
+     
+    }
+  }

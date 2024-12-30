@@ -1,6 +1,5 @@
 .text {
-   
-    margin-left: 130px; /* adjust this value to create space between nav and content */
+    margin-left: 130px; 
     margin-top: 10px;
 }
 
@@ -35,4 +34,24 @@
 
 .link {
   background-color: rgb(74, 157, 74);
+}
+
+@media (max-width: 500px) {
+
+  .list {
+    margin-left: 90px; /* adjust this value to create space between nav and content */
+    margin-top: 10px;
+    line-height: 30px;
+    font-size: 10px;
+    line-height: 17px;
+  }
+
+  .text {
+    margin-left: 90px; /* adjust this value to create space between nav and content */
+    margin-top: 2px;
+    font-size: 14px;
+  }
+
+  
+
 }

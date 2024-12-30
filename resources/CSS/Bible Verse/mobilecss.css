@@ -1,0 +1,125 @@
+.headertext {
+    color: #00AEFF;
+    font-weight: bold;
+}
+
+/* This is for Header Photos */
+.fullphoto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 30%;
+}
+
+
+.textformat {
+    margin-top: 1%;
+    margin-left: 1%;
+    font-size: 18px;
+}
+
+.big-textformat {
+  margin-top: 1%;
+    margin-left: 1%;
+    font-size: 25px;
+    margin-right: 1%;
+  
+}
+
+.verses {
+  line-height: 35px;
+  border: 1px solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 1%;
+  list-style-type: none;
+
+}
+
+.verses li {
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: -25px;
+}
+
+
+/* FAQ Properties */
+
+details {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  details::marker {
+    content: "\25B2"; /* arrow icon */
+    font-size: 16px;
+    color: #667;
+  }
+  
+  .verses-list {
+    margin-left: -25px;
+    font-size: 18px;
+  }
+
+  .actual-verse {
+    border: 1px solid gray;
+    padding-left: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 20px;
+    padding: 10px;
+  }
+  
+  details > div {
+    display: block;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+
+
+  .mainverse {
+    background-color: rgb(226, 226, 226);
+    width: fit-content;
+    margin-left: 1%;
+    margin-top: 1%;
+    border-radius: 20px;
+    font-size: 17px;
+    text-align: center;
+    color:rgb(94, 95, 95);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .versesbox {
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 17px;
+    color:rgb(94, 95, 95);
+    font-size: 30px;
+
+  }
+
+  @media (max-width: 500px) {
+    .verses-list {
+      margin-left: -35px;
+      font-size: 18px;
+    }
+  }
