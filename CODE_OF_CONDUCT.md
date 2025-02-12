@@ -1,6 +1,6 @@
 # Code of Conduct
 
-Be respecful of others beliefs and just be a person.
+Be respecful of others beliefs and just be a good person.
 
 
 # Contributor Covenant Code of Conduct
