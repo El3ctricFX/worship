@@ -1,3 +1,42 @@
+# 2025
+## February 11
+
+### Verses added
+> - Genesis 1:27
+> - Leviticus 26:6
+> - Job 22:28
+> - Psalm 4:8
+> - Psalm 23:1-6
+> - Psalm 25:4
+> - Psalm 34:17
+> - Psalm 55:22
+> - Psalm 91:11
+> - Psalm 118:13-14
+> - Psalm 139:23-24
+> - Proverbs 3:27-28
+> - Proverbs 15:1
+> - Proverbs 16:3
+> - Proverbs 17:17
+> - Matthew 26:41
+> - Luke 17:3-4
+> - John 1:1
+> - Galatians 1:10
+> - Galatians 2:20
+> - Galatians 5:16
+> - Ephesians 4:26
+> - Colossians 3:17
+> - 2 Timothy 2:24-25
+
+### Commit
+
+[replace](replace)
+
+## Credit
+
+Made by [@El3ctricFX](https://github.com/El3ctricFX)
+
+# 2024
+
 # December 30
 
 ### Additions
