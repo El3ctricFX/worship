@@ -1,67 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Testimonies | Faith Cheat Sheet</title>
+  <link rel="icon" href="../images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <title>Testimonies</title>
-    <link rel="stylesheet" href="../resources/main.css">
-    <link rel="stylesheet" href="../resources/CSS/Bible Verse/bibleverse.css">
-    <link rel="stylesheet" href="../resources/CSS/testimonies/testimonies-nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="../resources/image/icon.png" type="image/x-icon">
-  </head>
+  <header class="header">
+    <div class="header-flex">
+      <div class="logo">
+        <a href="../index.html">
+          <i class="fa-solid fa-cross"></i> WORSHIP<span>✦</span>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li><a href="bibleverses.html"><i class="fa-solid fa-book-bible"></i> Verses</a></li>
+          <li><a href="testimonies.html"><i class="fa-solid fa-scroll"></i> Testimonies</a></li>
+          <li><a href="resources.html"><i class="fa-solid fa-link"></i> Resources</a></li>
+        </ul>
+      </nav>
+      <div class="shortcut-pill">⌨️ 1 (home) | ESC</div>
+    </div>
+  </header>
+
+  <section class="inner-hero">
+    <div class="hero-image">
+      <img src="https://cdn.pixabay.com/photo/2015/07/27/20/16/book-863418_640.jpg" alt="Open Bible with tree">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-caption">
+      <h1><i class="fa-solid fa-scroll"></i> Testimonies</h1>
+      <p>Real stories of God’s faithfulness</p>
+    </div>
+  </section>
+
+  <div class="verses-intro" style="margin-bottom: 1rem;">
+    <p>✨ <strong>Be encouraged</strong> — These testimonies are shared by believers who have experienced God’s grace. If you have a testimony you'd like to add, <a href="faq.html">let us know</a>.</p>
+  </div>
+
+  <div class="wip-container">
+    <div class="wip-card">
+      <i class="fa-regular fa-clock"></i>
+      <h2>Work in Progress</h2>
+      <p>Testimonies coming soon. Check back later!</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-wrap">
+      <div class="footer-linkset">
+        <a href="faq.html"><i class="fa-regular fa-circle-question"></i> FAQ</a>
+        <a href="https://github.com/El3ctricFX/worship" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://electricproductions.pages.dev/" target="_blank"><i class="fa-solid fa-globe"></i> Other Resources</a>
+        <a href="Old%20Website/jesus.html"><i class="fa-regular fa-folder-open"></i> Old Site</a>
+      </div>
+    </div>
+  </footer>
 
   <script>
-    document.addEventListener('keydown', function(event) {
-      if (event.key === '1') {
-        window.location.href = '../index.html';
+    (function() {
+      function shortcuts(e) {
+        const tag = document.activeElement?.tagName;
+        if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+        switch(e.key) {
+          case '1': location.href = '../index.html'; break;
+          case '2': location.href = 'testimonies.html'; break;
+          case '3': location.href = 'resources.html'; break;
+          case '?': case 'f': location.href = 'faq.html'; break;
+          case 'Escape': location.href = '../index.html'; break;
+          default: break;
+        }
       }
-    });
+      document.addEventListener('keydown', shortcuts);
+    })();
   </script>
-
-<script>
-  let escapePressed = false;
-  let animationFrameId = null;
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape' || event.keyCode === 27) {
-      if (!escapePressed) {
-        cancelAnimationFrame(animationFrameId);
-        animationFrameId = requestAnimationFrame(function() {
-          window.location.href = '../index.html';
-          escapePressed = true;
-        });
-      }
-    }
-  });
-</script>
-
-  <body>
-  
- 
-
-  
-    <div class="right-topnav navagation" align="right">
-      <h1 class="backbutton"><a href="../index.html">Back</a></h1>
-   </div>
-
-    </div>
-
-    <div align="center">
-      <ul class="navagation">
-        <li class="headertext"><a href="../index.html"><i class="fa-solid fa-scroll"></i> Testimonies</a></li>
-      </ul>
-    </div>
-
-    <img class="fullphoto" src="https://cdn.pixabay.com/photo/2015/07/27/20/16/book-863418_640.jpg" alt="Picture of bible with tree and stuff in background">
-    
-    <p class="main-textformat" style="margin-left: 1%; margin-top: 1%;">Work in Progress</p>
-
-  
-  </body>
-
+</body>
 </html>
-
-
-

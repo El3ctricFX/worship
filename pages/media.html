@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Resources | Faith Cheat Sheet</title>
+  <title>Media | Faith Cheat Sheet</title>
   <link rel="icon" href="../images/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -24,19 +24,51 @@
       font-weight: 500;
       padding: 0.3rem 0.5rem;
       border-bottom: 2px solid transparent;
+    }
+    .sub-nav a:hover, .sub-nav a.active {
+      color: #c49a2b;
+      border-bottom-color: #c49a2b;
+    }
+    .media-cards {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 2rem;
+    }
+    .media-card {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 2rem;
+      text-align: center;
+      width: 220px;
+      border: 1px solid #f0e3d0;
       transition: 0.2s;
     }
-    .sub-nav a:hover {
-      color: #c49a2b;
-      border-bottom-color: #c49a2b;
+    .media-card:hover {
+      transform: translateY(-6px);
+      border-color: #c49a2b;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.05);
     }
-    .sub-nav a.active {
+    .media-card i {
+      font-size: 2.5rem;
       color: #c49a2b;
-      border-bottom-color: #c49a2b;
+      margin-bottom: 1rem;
+    }
+    .media-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .media-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
     @media (max-width: 680px) {
       .sub-nav { gap: 1rem; padding: 0.5rem 1rem; }
-      .sub-nav a { font-size: 0.9rem; }
+      .media-cards { margin: 1rem; gap: 1rem; }
+      .media-card { width: 160px; padding: 1rem; }
     }
   </style>
 </head>
@@ -60,45 +92,45 @@
     </div>
   </header>
 
-  <!-- Secondary navigation (Resources / Communities / Media) -->
   <div class="sub-nav">
-    <a href="resources.html" class="active">📖 Resources</a>
+    <a href="resources.html">📖 Resources</a>
     <a href="communities.html">👥 Communities</a>
-    <a href="media.html">🎬 Media</a>
+    <a href="media.html" class="active">🎬 Media</a>
   </div>
 
   <section class="inner-hero">
     <div class="hero-image">
-      <img src="https://cdn.pixabay.com/photo/2024/04/26/21/28/faith-8722651_640.jpg" alt="Faith and Bible">
+      <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Media">
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-caption">
-      <h1><i class="fa-solid fa-link"></i> Resources</h1>
-      <p>Bible websites & study tools</p>
+      <h1><i class="fa-solid fa-music"></i> Media</h1>
+      <p>Faith-based content creators, music, and blogs</p>
     </div>
   </section>
 
-  <div class="resource-section">
-    <h2>📖 Bible Websites</h2>
-    <ul class="resource-list">
-      <li><a href="https://lifebible.com/" target="_blank"><i class="fa-solid fa-church"></i> Life Bible</a> (Its what i use and i love it, it has bible plans and daily verses etc.. to keep you on track with the Father and reading the Word)</li>
-      <li><a href="https://www.bible.com/bible/116/GEN.1.NLT" target="_blank"><i class="fa-solid fa-mobile-alt"></i> YouVersion Bible</a></li>
-      <li><a href="https://www.biblegateway.com/" target="_blank"><i class="fa-solid fa-gateway"></i> Bible Gateway</a></li>
-      <li><a href="https://www.biblestudytools.com/" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Bible Study Tools</a></li>
-      <li><a href="https://www.thekingsbible.com/" target="_blank"><i class="fa-solid fa-crown"></i> King James Bible</a></li>
-      <li><a href="https://biblehub.com/" target="_blank"><i class="fa-solid fa-book"></i> Bible Hub</a> (<a href="https://biblehub.com/lexicon/" target="_blank">Lexicon</a>)</li>
-      <li><a href="https://github.com/obaodelana/bible-term" target="_blank"><i class="fa-brands fa-linux"></i> Bible-Term</a> (<i class="resource-context" title="Many different translations for the linux users who perfer TUI applications within the terminal">Context</i>)</li>
-    </ul>
-  </div>
-
-  <div class="resource-section">
-    <h2>🛠️ Study & Apologetics</h2>
-    <ul class="resource-list">
-      <li><a href="https://crosswire.org/" target="_blank"><i class="fa-solid fa-code-branch"></i> The CrossWire Bible Society</a> (<i class="resource-context" title="Resources to help build Applications and addon to already built apps">Context</i>)</li>
-      <li><a href="https://answersingenesis.org/" target="_blank"><i class="fa-solid fa-dna"></i> Answers in Genesis</a></li>
-      <li><a href="https://givemeananswer.org/" target="_blank"><i class="fa-solid fa-question"></i> Give me an answer</a></li>
-      <li><a href="https://www.gotquestions.org/" target="_blank"><i class="fa-solid fa-comments"></i> Got Questions</a></li>
-    </ul>
+  <div class="media-cards">
+    <div class="media-card">
+      <a href="media/entertainers.html">
+        <i class="fa-brands fa-youtube"></i>
+        <h3>Content Creators</h3>
+        <p>YouTubers, TikTokers & more</p>
+      </a>
+    </div>
+    <div class="media-card">
+      <a href="media/songartist.html">
+        <i class="fa-solid fa-headphones"></i>
+        <h3>Song Artists</h3>
+        <p>Worship music & Christian bands</p>
+      </a>
+    </div>
+    <div class="media-card">
+      <a href="media/blogs.html">
+        <i class="fa-regular fa-newspaper"></i>
+        <h3>Blogs</h3>
+        <p>Articles & devotionals</p>
+      </a>
+    </div>
   </div>
 
   <footer class="footer">

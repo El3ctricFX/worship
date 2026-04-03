@@ -1,0 +1,915 @@
+/* ============================================
+   LIGHT & GLORIOUS THEME – FULL WIDTH
+   Reflecting the majesty and light of God
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fffdf9;
+  color: #2c2a27;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* HEADER – light glass */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 253, 245, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #f0e3d0;
+  width: 100%;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: 'Cormorant Garamond', serif;
+  background: linear-gradient(135deg, #c49a2b, #a87c3a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.logo i {
+  color: #c49a2b;
+  background: none;
+  margin-right: 6px;
+}
+
+.logo span {
+  font-size: 1.2rem;
+  color: #c49a2b;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav a {
+  color: #4a3b2c;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+
+.nav a i {
+  color: #c49a2b;
+}
+
+.nav a:hover {
+  color: #a87c3a;
+  border-bottom: 1px solid #c49a2b;
+}
+
+.shortcut-pill {
+  background: #f7efe3;
+  padding: 0.3rem 1rem;
+  border-radius: 40px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  font-family: monospace;
+  color: #a87c3a;
+  border: 1px solid #e6d6c2;
+}
+
+/* HERO – full bleed, light overlay */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75) contrast(1.05);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(255,250,235,0.6) 0%, rgba(0,0,0,0.2) 100%);
+}
+
+.hero-caption {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: #1f1b16;
+}
+
+.hero-caption h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-shadow: 2px 2px 8px rgba(255,255,240,0.8);
+}
+
+.hero-caption h1 span {
+  color: #c49a2b;
+}
+
+.hero-caption p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin-top: 1rem;
+  background: rgba(255,252,245,0.7);
+  backdrop-filter: blur(4px);
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+}
+
+/* INTRO STRIP – light gold */
+.intro-strip {
+  background: #fef8ef;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  border-top: 1px solid #f3e7d9;
+  border-bottom: 1px solid #f3e7d9;
+  color: #6b4c2c;
+}
+
+/* CARDS SECTION – 3 columns, full width */
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  background: #ffffff;
+  gap: 0;
+}
+
+.card {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  border-right: 1px solid #f0e3d0;
+  border-bottom: 1px solid #f0e3d0;
+}
+
+.card:last-child {
+  border-right: none;
+}
+
+.card:hover {
+  background: #fffbf5;
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px -12px rgba(0,0,0,0.05);
+}
+
+.card-icon {
+  font-size: 2.8rem;
+  color: #c49a2b;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.7rem;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 0.8rem;
+  color: #3a2c1e;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #6b5c4a;
+  line-height: 1.5;
+}
+
+/* OUTRO BLOCK */
+.outro-block {
+  background: #fef8ef;
+  padding: 2rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+  color: #8b6b44;
+  border-top: 1px solid #f3e7d9;
+  border-bottom: 1px solid #f3e7d9;
+}
+
+.outro-block i {
+  color: #c49a2b;
+  margin: 0 8px;
+}
+
+/* FOOTER – left-aligned, no centering */
+.footer {
+  background: #faf5ea;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  border-top: 1px solid #ede0ce;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.footer-disclaimer {
+  font-size: 0.75rem;
+  color: #8b7355;
+  text-align: left;
+}
+
+.footer-linkset {
+  display: flex;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer-linkset a {
+  color: #8b6b44;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.footer-linkset a i {
+  margin-right: 5px;
+  color: #c49a2b;
+}
+
+.footer-linkset a:hover {
+  color: #a87c3a;
+}
+
+/* RESPONSIVE – stays full width */
+@media (max-width: 780px) {
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav {
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cards-section {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    border-right: none;
+    border-bottom: 1px solid #f0e3d0;
+  }
+  .card:last-child {
+    border-bottom: none;
+  }
+  .hero {
+    height: 60vh;
+    min-height: 400px;
+  }
+  .footer-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 2rem 1rem;
+  }
+  .intro-strip {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
+}
+
+/* ===== BIBLE VERSES PAGE – ADDITIONAL STYLES ===== */
+
+/* Hero for inner pages (smaller) */
+.inner-hero {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  min-height: 280px;
+  overflow: hidden;
+}
+
+.inner-hero .hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-hero .hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.65) contrast(1.05);
+}
+
+.inner-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(255,250,235,0.7) 0%, rgba(0,0,0,0.25) 100%);
+}
+
+.inner-hero .hero-caption {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.inner-hero .hero-caption h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  color: #2c241c;
+  background: rgba(255,252,245,0.85);
+  backdrop-filter: blur(4px);
+  padding: 0.3rem 1.5rem;
+  border-radius: 60px;
+  display: inline-block;
+}
+
+.inner-hero .hero-caption p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  background: rgba(255,252,245,0.7);
+  padding: 0.3rem 1rem;
+  border-radius: 40px;
+}
+
+/* Intro text & verse highlight */
+.verses-intro {
+  max-width: 100%;
+  margin: 1.5rem 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.verses-intro p {
+  margin-bottom: 0.5rem;
+}
+
+.highlight-verse {
+  background: #fef3e4;
+  padding: 1rem 2rem;
+  margin: 1rem 2rem;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  border-left: 5px solid #c49a2b;
+}
+
+/* Verse grid – clean columns */
+.verse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.8rem 1.5rem;
+  margin: 2rem;
+}
+
+.verse-item {
+  font-size: 0.95rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px dashed #f0e3d0;
+  color: #3a2c1e;
+}
+
+.verse-item strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  color: #c49a2b;
+}
+
+.verse-item .context-tooltip {
+  color: #c49a2b;
+  cursor: help;
+  margin-left: 6px;
+  font-size: 0.75rem;
+  border-bottom: 1px dotted #c49a2b;
+}
+
+/* Widget row */
+.widget-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.widget-row iframe {
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Mobile link button */
+.mobile-link {
+  display: inline-block;
+  margin: 1rem 2rem;
+  background: #c49a2b20;
+  padding: 0.5rem 1.2rem;
+  border-radius: 40px;
+  color: #a87c3a;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.mobile-link:hover {
+  background: #c49a2b40;
+}
+
+/* Responsive tweaks */
+@media (max-width: 680px) {
+  .verse-grid {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    gap: 0.5rem;
+  }
+  .verses-intro, .highlight-verse, .widget-row {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .inner-hero {
+    height: 30vh;
+  }
+}
+
+/* ===== TESTIMONIES PAGE ===== */
+.testimonies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.testimony-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 1.8rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f0e3d0;
+  transition: all 0.3s ease;
+}
+
+.testimony-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 28px -8px rgba(0, 0, 0, 0.08);
+  border-color: #c49a2b;
+}
+
+.testimony-card i {
+  font-size: 2rem;
+  color: #c49a2b;
+  margin-bottom: 1rem;
+}
+
+.testimony-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #3a2c1e;
+}
+
+.testimony-card .testimony-excerpt {
+  font-size: 0.9rem;
+  color: #6b5c4a;
+  line-height: 1.5;
+  margin: 0.8rem 0;
+}
+
+.testimony-card .testimony-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #c49a2b;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.testimony-card .testimony-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESOURCES PAGE ===== */
+.resource-category {
+  margin: 2rem;
+}
+
+.resource-category h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  color: #3a2c1e;
+  border-left: 4px solid #c49a2b;
+  padding-left: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.resource-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.8rem;
+}
+
+.resource-list li {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #f0e3d0;
+  transition: 0.2s;
+}
+
+.resource-list li:hover {
+  background: #fef8ef;
+  border-color: #c49a2b;
+}
+
+.resource-list a {
+  text-decoration: none;
+  color: #c49a2b;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resource-list a i {
+  color: #c49a2b;
+}
+
+.resource-list a:hover {
+  text-decoration: underline;
+}
+
+.resource-context {
+  font-size: 0.75rem;
+  color: #8b6b44;
+  margin-left: 6px;
+  cursor: help;
+  border-bottom: 1px dotted #c49a2b;
+}
+
+.resource-divider {
+  margin: 1rem 0;
+  border: none;
+  height: 1px;
+  background: #f0e3d0;
+}
+
+@media (max-width: 680px) {
+  .testimonies-grid, .resource-category {
+    margin: 1rem;
+  }
+  .resource-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== TESTIMONIES PAGE (work in progress) ===== */
+.wip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin: 3rem 2rem;
+}
+
+.wip-card {
+  background: #ffffff;
+  border-radius: 32px;
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.04);
+  border: 1px solid #f0e3d0;
+}
+
+.wip-card i {
+  font-size: 3rem;
+  color: #c49a2b;
+  margin-bottom: 1rem;
+}
+
+.wip-card h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #3a2c1e;
+}
+
+.wip-card p {
+  color: #8b6b44;
+  font-size: 1rem;
+}
+
+/* ===== RESOURCES PAGE (original lists only) ===== */
+.resource-section {
+  margin: 2rem;
+}
+
+.resource-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  color: #3a2c1e;
+  border-left: 4px solid #c49a2b;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.resource-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.resource-list li {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #f0e3d0;
+  transition: 0.2s;
+}
+
+.resource-list li:hover {
+  background: #fef8ef;
+  border-color: #c49a2b;
+}
+
+.resource-list a {
+  text-decoration: none;
+  color: #c49a2b;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resource-list a i {
+  color: #c49a2b;
+}
+
+.resource-list a:hover {
+  text-decoration: underline;
+}
+
+.resource-context {
+  font-size: 0.75rem;
+  color: #8b6b44;
+  margin-left: 6px;
+  cursor: help;
+  border-bottom: 1px dotted #c49a2b;
+}
+
+/* Make footer stick to bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.site-wrapper, .app {
+  flex: 1;
+}
+
+/* For pages without .site-wrapper, ensure footer stays down */
+body > footer {
+  margin-top: auto;
+}
+
+/* Make logo clickable */
+.logo a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+}
+
+/* Mobile-friendly nav adjustments */
+@media (max-width: 680px) {
+  .header-flex {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.8rem;
+  }
+  .nav {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav li a {
+    font-size: 0.9rem;
+  }
+  .shortcut-pill {
+    font-size: 0.6rem;
+  }
+  .inner-hero .hero-caption h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ===== FAQ PAGE ===== */
+.faq-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.faq-container details {
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  border: 1px solid #f0e3d0;
+  transition: 0.2s;
+}
+
+.faq-container details:hover {
+  border-color: #c49a2b;
+}
+
+.faq-container summary {
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background: #fefaf5;
+  border-radius: 20px;
+  color: #3a2c1e;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.faq-container summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-container summary::before {
+  content: "▶";
+  font-size: 0.8rem;
+  color: #c49a2b;
+  transition: transform 0.2s;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.faq-container details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.faq-container .faq-content {
+  padding: 0 1.5rem 1.2rem 2.8rem;
+  color: #5f5346;
+  line-height: 1.6;
+  border-top: 1px solid #f0e3d0;
+  margin-top: 0.5rem;
+}
+
+.faq-container .faq-content ul, 
+.faq-container .faq-content p {
+  margin: 0.5rem 0;
+}
+
+.faq-container .faq-content a {
+  color: #c49a2b;
+  text-decoration: none;
+}
+
+.faq-container .faq-content a:hover {
+  text-decoration: underline;
+}
+
+.faq-container .nested-details {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  background: #fefaf5;
+}
+
+@media (max-width: 680px) {
+  .faq-container {
+    padding: 0 1rem;
+    margin: 1rem auto;
+  }
+  .faq-container summary {
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+  }
+  .faq-container .faq-content {
+    padding: 0 1rem 1rem 1.8rem;
+  }
+}
+
+/* Modal Styles – for Bible verses popup */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #f0e3d0;
+  border-radius: 16px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Inter', sans-serif;
+  color: #2c2a27;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 680px) {
+  .modal-content {
+    width: 90%;
+    margin: 20% auto;
+    padding: 15px;
+  }
+  .close-button {
+    font-size: 32px;
+  }
+}
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Song Artists | Faith Cheat Sheet</title>
+  <link rel="icon" href="../../images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    .sub-nav {
+      background: #ffffff;
+      border-bottom: 1px solid #f0e3d0;
+      padding: 0.5rem 2rem;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .sub-nav a {
+      color: #8b6b44;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.3rem 0.5rem;
+      border-bottom: 2px solid transparent;
+    }
+    .sub-nav a:hover, .sub-nav a.active {
+      color: #c49a2b;
+      border-bottom-color: #c49a2b;
+    }
+    .artist-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem;
+    }
+    .artist-list li {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 0.8rem 1.2rem;
+      margin-bottom: 0.5rem;
+      border: 1px solid #f0e3d0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .artist-list li strong, .artist-list li span.artist-name {
+      min-width: 180px;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+    }
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .social-links a {
+      color: #c49a2b;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    [title] {
+      cursor: help;
+      border-bottom: 1px dotted #c49a2b;
+    }
+    @media (max-width: 680px) {
+      .sub-nav { gap: 1rem; padding: 0.5rem 1rem; }
+      .artist-list li { flex-direction: column; align-items: flex-start; }
+      .artist-list li strong, .artist-list li span.artist-name { min-width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-flex">
+      <div class="logo">
+        <a href="../../index.html">
+          <i class="fa-solid fa-cross"></i> WORSHIP<span>✦</span>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li><a href="../bibleverses.html"><i class="fa-solid fa-book-bible"></i> Verses</a></li>
+          <li><a href="../testimonies.html"><i class="fa-solid fa-scroll"></i> Testimonies</a></li>
+          <li><a href="../resources.html"><i class="fa-solid fa-link"></i> Resources</a></li>
+        </ul>
+      </nav>
+      <div class="shortcut-pill">⌨️ 1 (home) | ESC</div>
+    </div>
+  </header>
+
+  <div class="sub-nav">
+    <a href="../resources.html">📖 Resources</a>
+    <a href="../communities.html">👥 Communities</a>
+    <a href="../media.html" class="active">🎬 Media</a>
+  </div>
+
+  <section class="inner-hero">
+    <div class="hero-image">
+      <img src="https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Worship music">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-caption">
+      <h1><i class="fa-solid fa-headphones"></i> Song Artists</h1>
+      <p>Worship music & Christian bands</p>
+    </div>
+  </section>
+
+  <div class="verses-intro" style="margin-bottom: 0;">
+    <p>🎵 <strong>Context:</strong> Hover over any artist name to see a note (if available).</p>
+  </div>
+
+  <ul class="artist-list">
+    <li><span class="artist-name">Bethel Music</span> <span class="social-links"><a href="https://www.youtube.com/@BethelMusic/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://bethelmusic.com/music" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+    <li><span class="artist-name">Elevation Worship</span> <span class="social-links"><a href="https://www.youtube.com/@elevationworship/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://www.elevationworship.com/music" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+    <li><span class="artist-name">Hillsong Worship</span> <span class="social-links"><a href="https://www.youtube.com/hillsongworship/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://hillsong.com/worship/" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+    <li><span class="artist-name">Brandon Lake</span> <span class="social-links"><a href="https://www.youtube.com/@brandonlakeofficial/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://www.tiktok.com/@brandonlakemusic" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a> <a href="https://brandonlake.co/" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+    <li><span class="artist-name">Josh Baldwin</span> <span class="social-links"><a href="https://www.youtube.com/@JoshBaldwinOfficial/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://bethelmusic.com/roster/josh-baldwin" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+    <li><span class="artist-name">Skillet</span> <span class="social-links"><a href="https://www.youtube.com/@skilletband/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://www.tiktok.com/@skilletmusic" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a> <a href="https://skillet.komi.io/" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+    <li><span class="artist-name">for KING + COUNTRY</span> <span class="social-links"><a href="https://www.youtube.com/@ForKingAndCountry/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a></span></li>
+    <li><span class="artist-name">Stephen Stanley</span> <span class="social-links"><a href="https://www.youtube.com/@StephenStanleyMusic/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://www.tiktok.com/@stephenstanleymusic" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a> <a href="https://www.stephenstanleymusic.com/" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+    <li><span class="artist-name" title="She doesn't mainly do music so at this moment of writing this she has one single 'captivated' though she's also a amazing creator so go check her stuff out.">Grace Runkle</span> <span class="social-links"><a href="https://www.youtube.com/@just.grace_here/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://linktr.ee/justgracehere" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+    <li><span class="artist-name" title="Don't know much music from him besides 'Awesome God' but I'm sure he's a amazing artist!">Michael W. Smith</span> <span class="social-links"><a href="https://www.youtube.com/@michaelwsmithTV/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://michaelwsmith.com" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+    <li><span class="artist-name">FlyleafVEVO</span> <span class="social-links"><a href="https://www.youtube.com/@FlyleafVEVO/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://www.hq.vevo.com/artist/flyleaf" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+    <li><span class="artist-name" title="Same thing for HolyName – don't know any other songs than 'Fall on your knees'">HolyName</span> <span class="social-links"><a href="https://www.youtube.com/@holynamewxrship/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://bio.to/holyname" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+    <li><span class="artist-name">Chris Tomlin</span> <span class="social-links"><a href="https://www.youtube.com/@christomlinmusic/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://www.christomlin.com/pages/music" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+    <li><span class="artist-name">Casting Crowns</span> <span class="social-links"><a href="https://www.youtube.com/@CastingCrownsOfficial/videos" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> <a href="https://www.castingcrowns.com/" target="_blank"><i class="fa-solid fa-link"></i> Socials</a></span></li>
+  </ul>
+
+  <footer class="footer">
+    <div class="footer-wrap">
+      <div class="footer-linkset">
+        <a href="../faq.html"><i class="fa-regular fa-circle-question"></i> FAQ</a>
+        <a href="https://github.com/El3ctricFX/worship" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://electricproductions.pages.dev/" target="_blank"><i class="fa-solid fa-globe"></i> Other Resources</a>
+        <a href="../Old%20Website/jesus.html"><i class="fa-regular fa-folder-open"></i> Old Site</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      function shortcuts(e) {
+        const tag = document.activeElement?.tagName;
+        if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+        if (e.key === '1' || e.key === 'Escape') location.href = '../../index.html';
+      }
+      document.addEventListener('keydown', shortcuts);
+    })();
+  </script>
+</body>
+</html>

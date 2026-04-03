@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Blogs | Faith Cheat Sheet</title>
+  <link rel="icon" href="../../images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    .sub-nav {
+      background: #ffffff;
+      border-bottom: 1px solid #f0e3d0;
+      padding: 0.5rem 2rem;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .sub-nav a {
+      color: #8b6b44;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.3rem 0.5rem;
+      border-bottom: 2px solid transparent;
+    }
+    .sub-nav a:hover, .sub-nav a.active {
+      color: #c49a2b;
+      border-bottom-color: #c49a2b;
+    }
+    .blog-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem;
+    }
+    .blog-list li {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 0.8rem 1.2rem;
+      margin-bottom: 0.5rem;
+      border: 1px solid #f0e3d0;
+      transition: 0.2s;
+    }
+    .blog-list li:hover {
+      background: #fef8ef;
+      border-color: #c49a2b;
+    }
+    .blog-list a {
+      text-decoration: none;
+      color: #c49a2b;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .blog-list a i {
+      font-size: 1.1rem;
+      width: 1.4rem;
+      color: #c49a2b;
+    }
+    .inner-hero .hero-image {
+      background-color: #d9c5a7;
+    }
+    @media (max-width: 680px) {
+      .sub-nav { gap: 1rem; padding: 0.5rem 1rem; }
+      .blog-list { margin: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-flex">
+      <div class="logo">
+        <a href="../../index.html">
+          <i class="fa-solid fa-cross"></i> WORSHIP<span>✦</span>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li><a href="../bibleverses.html"><i class="fa-solid fa-book-bible"></i> Verses</a></li>
+          <li><a href="../testimonies.html"><i class="fa-solid fa-scroll"></i> Testimonies</a></li>
+          <li><a href="../resources.html"><i class="fa-solid fa-link"></i> Resources</a></li>
+        </ul>
+      </nav>
+      <div class="shortcut-pill">⌨️ 1 (home) | ESC</div>
+    </div>
+  </header>
+
+  <div class="sub-nav">
+    <a href="../resources.html">📖 Resources</a>
+    <a href="../communities.html">👥 Communities</a>
+    <a href="../media.html" class="active">🎬 Media</a>
+  </div>
+
+  <section class="inner-hero">
+    <div class="hero-image">
+      <img src="https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Blog writing" onerror="this.style.display='none';">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-caption">
+      <h1><i class="fa-regular fa-newspaper"></i> Blogs</h1>
+      <p>Faith articles & devotionals</p>
+    </div>
+  </section>
+
+  <div class="resource-section">
+    <h2>📝 Recommended Blogs</h2>
+    <ul class="blog-list">
+      <li><a href="https://blog.bible/bible-blog/" target="_blank"><i class="fa-solid fa-book"></i> Bible Blog</a></li>
+      <li><a href="https://news.americanbible.org/blog/list?article_sections=prayer-blog&list_type=sections" target="_blank"><i class="fa-solid fa-hands-praying"></i> American Bible Society Prayer Blog</a></li>
+      <li><a href="https://www.americanbible.org/engage/daily-bible-reading/" target="_blank"><i class="fa-regular fa-calendar-alt"></i> American Bible's Blog</a></li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-wrap">
+      <div class="footer-linkset">
+        <a href="../faq.html"><i class="fa-regular fa-circle-question"></i> FAQ</a>
+        <a href="https://github.com/El3ctricFX/worship" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+        <a href="https://electricproductions.pages.dev/" target="_blank"><i class="fa-solid fa-globe"></i> Other Resources</a>
+        <a href="../Old%20Website/jesus.html"><i class="fa-regular fa-folder-open"></i> Old Site</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      function shortcuts(e) {
+        const tag = document.activeElement?.tagName;
+        if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+        if (e.key === '1' || e.key === 'Escape') location.href = '../../index.html';
+      }
+      document.addEventListener('keydown', shortcuts);
+    })();
+  </script>
+</body>
+</html>

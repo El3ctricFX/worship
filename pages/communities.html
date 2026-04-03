@@ -3,11 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>FAQ | Faith Cheat Sheet</title>
+  <title>Communities | Faith Cheat Sheet</title>
   <link rel="icon" href="../images/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    .sub-nav {
+      background: #ffffff;
+      border-bottom: 1px solid #f0e3d0;
+      padding: 0.5rem 2rem;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .sub-nav a {
+      color: #8b6b44;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.3rem 0.5rem;
+      border-bottom: 2px solid transparent;
+    }
+    .sub-nav a:hover, .sub-nav a.active {
+      color: #c49a2b;
+      border-bottom-color: #c49a2b;
+    }
+    @media (max-width: 680px) {
+      .sub-nav { gap: 1rem; padding: 0.5rem 1rem; }
+    }
+  </style>
 </head>
 <body>
 
@@ -25,42 +50,33 @@
           <li><a href="resources.html"><i class="fa-solid fa-link"></i> Resources</a></li>
         </ul>
       </nav>
-      <div class="shortcut-pill">⌨️ 1 | ESC | ? | f</div>
+      <div class="shortcut-pill">⌨️ 1 (home) | ESC</div>
     </div>
   </header>
 
+  <div class="sub-nav">
+    <a href="resources.html">📖 Resources</a>
+    <a href="communities.html" class="active">👥 Communities</a>
+    <a href="media.html">🎬 Media</a>
+  </div>
+
   <section class="inner-hero">
     <div class="hero-image">
-      <img src="https://cdn.pixabay.com/photo/2024/05/31/07/53/ai-generated-8800020_640.jpg" alt="Question mark light">
+      <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Community">
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-caption">
-      <h1><i class="fa-regular fa-circle-question"></i> FAQ</h1>
-      <p>Frequently asked questions & keyboard shortcuts</p>
+    <h1><i class="fa-solid fa-people-group"></i> Communities</h1>
+      <p>Christian Discord servers</p>
     </div>
   </section>
 
-  <div class="faq-container">
-    <details>
-      <summary>How can I contribute to the website or request an addition?</summary>
-      <div class="faq-content">
-        <p>You can do this through the website's <a href="https://github.com/El3ctricFX/worship" target="_blank">GitHub Repository</a>. If you know how to code yourself, you can submit a pull request. If you just want a feature added, submit through GitHub's <a href="https://github.com/El3ctricFX/worship/issues" target="_blank">Issues</a> tab as a Feature Request & Enhancement!</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>What keyboard shortcuts are available?</summary>
-      <div class="faq-content">
-        <p>Here are all the shortcuts built into the website:</p>
-        <ul>
-          <li><strong>1, 2, 3</strong> – Navigate to Bible Verses (1), Testimonies (2), Resources (3)</li>
-          <li><strong>1</strong> (from any inner page) – Return to homepage</li>
-          <li><strong>ESC</strong> – Return to homepage</li>
-          <li><strong>?</strong> or <strong>f</strong> – Open this FAQ page</li>
-        </ul>
-        <p>Also, clicking on the header text (e.g., "Bible Verses" while on that page) will take you back home.</p>
-      </div>
-    </details>
+  <div class="resource-section">
+    <h2>📱 Discord Servers</h2>
+    <ul class="resource-list">
+      <li><a href="https://discord.gg/jesus" target="_blank"><i class="fa-brands fa-discord"></i> Jesus | Christianity</a></li>
+      <li><a href="https://discord.gg/xPryCpcXrn" target="_blank"><i class="fa-brands fa-discord"></i> Christian Viibes Server</a></li>
+    </ul>
   </div>
 
   <footer class="footer">
@@ -79,14 +95,7 @@
       function shortcuts(e) {
         const tag = document.activeElement?.tagName;
         if (tag === 'INPUT' || tag === 'TEXTAREA') return;
-        switch(e.key) {
-          case '1': location.href = '../index.html'; break;
-          case '2': location.href = 'testimonies.html'; break;
-          case '3': location.href = 'resources.html'; break;
-          case '?': case 'f': location.href = 'faq.html'; break;
-          case 'Escape': location.href = '../index.html'; break;
-          default: break;
-        }
+        if (e.key === '1' || e.key === 'Escape') location.href = '../index.html';
       }
       document.addEventListener('keydown', shortcuts);
     })();
