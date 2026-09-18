@@ -206,7 +206,7 @@
         modal.style.display = 'block';
         modalTextDiv.innerHTML = 'Loading verse...';
 
-        const apiUrl = `https://bible-api.com/${encodeURIComponent(reference)}?translation=web`;
+        const apiUrl = `https://bible-api.com/${encodeURIComponent(reference)}?translation=kjv`;
 
         fetch(apiUrl)
           .then(response => response.json())
